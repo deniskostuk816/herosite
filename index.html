@@ -1,5 +1,14 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HYPE SMM Agency</title>
+</head>
+<body style="margin:0;padding:0;">
+
 <section class="hype-hero" id="hypeHero1">
- 
+
   <div class="hype-hero__bg" aria-hidden="true">
     <svg class="hype-hero__ymark" viewBox="0 0 120 160" xmlns="http://www.w3.org/2000/svg">
       <path d="M20 20 L60 70 L100 20" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round"/>
@@ -7,9 +16,9 @@
     </svg>
     <span class="hype-hero__dots"></span>
   </div>
- 
+
   <div class="hype-hero__inner">
- 
+
     <nav class="hype-hero__nav" data-hype-el="navWrap">
       <div class="hype-hero__logo">
         <span class="hype-hero__logo-main" data-hype-el="logoText"></span>
@@ -20,22 +29,22 @@
         <span data-hype-el="navButtonText"></span>
       </a>
     </nav>
- 
+
     <div class="hype-hero__main">
- 
+
       <div class="hype-hero__text">
- 
+
         <div class="hype-hero__badge" data-hype-el="badgeWrap">
           <span class="hype-hero__badge-line"></span>
           <span data-hype-el="badgeText"></span>
         </div>
- 
+
         <div class="hype-hero__heading-wrap" data-hype-el="headingWrap"></div>
- 
+
         <span class="hype-hero__rule" aria-hidden="true"></span>
- 
+
         <p class="hype-hero__sub" data-hype-el="subText"></p>
- 
+
         <div class="hype-hero__cta-row">
           <a class="hype-hero__btn" data-hype-el="buttonLink" href="#">
             <span data-hype-el="buttonText"></span>
@@ -44,20 +53,20 @@
             </svg>
           </a>
         </div>
- 
+
       </div>
- 
+
       <div class="hype-hero__media">
         <img class="hype-hero__img" data-hype-el="heroImage" src="" alt="" />
       </div>
- 
+
     </div>
- 
+
     <div class="hype-hero__stats" data-hype-el="statsWrap"></div>
- 
+
   </div>
 </section>
- 
+
 <style>
 #hypeHero1{
   /* ---- dark theme за замовчуванням, JS підставить реальні кольори з CONFIG ---- */
@@ -75,7 +84,7 @@
   --h-border:rgba(255,255,255,0.08);
   --font-heading:'Arial',sans-serif;
   --font-body:'Arial',sans-serif;
- 
+
   position:relative;
   overflow:hidden;
   background:var(--h-bg-deep);
@@ -86,7 +95,7 @@
 }
 #hypeHero1 *{ box-sizing:border-box; }
 #hypeHero1 ul{ list-style:none; margin:0; padding:0; }
- 
+
 /* decorative layer */
 #hypeHero1 .hype-hero__bg{
   position:absolute; inset:0; z-index:0; pointer-events:none;
@@ -111,13 +120,13 @@
   background-size:12px 12px;
   opacity:0.35;
 }
- 
+
 #hypeHero1 .hype-hero__inner{
   position:relative; z-index:1;
   max-width:1220px;
   margin:0 auto;
 }
- 
+
 /* nav */
 #hypeHero1 .hype-hero__nav{
   display:flex;
@@ -175,7 +184,7 @@
   border-color:var(--h-accent);
   color:#FFFFFF !important;
 }
- 
+
 /* main content */
 #hypeHero1 .hype-hero__main{
   display:flex;
@@ -184,7 +193,7 @@
   padding-bottom:70px;
 }
 #hypeHero1 .hype-hero__text{ flex:1 1 560px; min-width:0; }
- 
+
 #hypeHero1 .hype-hero__badge{
   display:inline-flex;
   align-items:center;
@@ -204,7 +213,7 @@
   background:var(--h-accent);
   display:inline-block;
 }
- 
+
 #hypeHero1 .hype-hero__heading-wrap{
   margin:22px 0 0;
   opacity:0;
@@ -227,7 +236,7 @@
 #hypeHero1 .hype-hero__heading-wrap .hype-hero__line--accent{
   color:var(--h-accent) !important;
 }
- 
+
 #hypeHero1 .hype-hero__rule{
   display:block;
   width:64px; height:2px;
@@ -237,7 +246,7 @@
   animation:hypeUp 0.8s ease forwards;
   animation-delay:0.26s;
 }
- 
+
 #hypeHero1 .hype-hero__sub{
   margin:0 0 36px;
   font-family:var(--font-body);
@@ -250,7 +259,7 @@
   animation:hypeUp 0.8s ease forwards;
   animation-delay:0.34s;
 }
- 
+
 #hypeHero1 .hype-hero__cta-row{
   opacity:0;
   transform:translateY(16px);
@@ -279,7 +288,7 @@
 #hypeHero1 .hype-hero__btn:active{ transform:translateY(-1px); }
 #hypeHero1 .hype-hero__btn-arrow{ transition:transform 0.25s ease; }
 #hypeHero1 .hype-hero__btn:hover .hype-hero__btn-arrow{ transform:translateX(4px); }
- 
+
 /* media */
 #hypeHero1 .hype-hero__media{
   flex:1 1 420px;
@@ -304,11 +313,11 @@
   0%,100%{ transform:translateY(0); }
   50%{ transform:translateY(-14px); }
 }
- 
+
 @keyframes hypeUp{
   to{ opacity:1; transform:translateY(0) scale(1); }
 }
- 
+
 /* stats bar */
 #hypeHero1 .hype-hero__stats{
   display:flex;
@@ -342,7 +351,7 @@
   color:var(--h-stat-label) !important;
   line-height:1.35;
 }
- 
+
 /* responsive */
 @media (max-width: 980px){
   #hypeHero1 .hype-hero__nav-links{ display:none; }
@@ -378,20 +387,20 @@
   #hypeHero1 .hype-hero__logo-main{ font-size:19px; }
 }
 </style>
- 
+
 <script>
 (function(){
- 
+
   /* =========================================================
      CONFIG — ВЕСЬ КОНТЕНТ, КОЛЬОРИ ТА ШРИФТИ РЕДАГУЮТЬСЯ ТУТ
      ========================================================= */
   var CONFIG = {
- 
+
     /* ---------- SEO / СТРУКТУРА ---------- */
     headingLevel: "h1", /* ЗМІНИТИ на "h2" якщо цей блок НЕ перший на сторінці */
     showNav: true, /* ЗМІНИТИ на false якщо на сайті вже є окремий блок меню (щоб не дублювати навігацію) */
     theme: "dark", /* ЗМІНИТИ на "light" щоб увімкнути світлу тему бренду HYPE */
- 
+
     /* ---------- ЛОГОТИП / НАВІГАЦІЯ ---------- */
     logoText: "HYPE", /* ЗМІНИТИ */
     logoSubText: "SMM AGENCY", /* ЗМІНИТИ */
@@ -403,20 +412,20 @@
     ],
     navButtonText: "Зв'язатися", /* ЗМІНИТИ */
     navButtonLink: "#contact", /* ЗМІНИТИ на якір форми/popup Tilda */
- 
+
     /* ---------- ТЕКСТИ ГОЛОВНОГО ЕКРАНА ---------- */
     badgeText: "Маркетингова агенція повного циклу", /* ЗМІНИТИ */
- 
+
     /* Заголовок розбитий на 3 рядки, як у брендбуку HYPE (СТРАТЕГІЯ. КОНТЕНТ. РЕЗУЛЬТАТ.) */
     headingLine1: "СТРАТЕГІЯ.", /* ЗМІНИТИ */
     headingLine2: "КОНТЕНТ.", /* ЗМІНИТИ */
     headingLine3: "РЕЗУЛЬТАТ.", /* ЗМІНИТИ — цей рядок автоматично буде виділено акцентним кольором */
- 
+
     subText: "Ми вирощуємо бренди, які виділяються та масштабуються: SMM, контент, Reels, фото- і відеозйомка, таргет у Meta та Google Ads.", /* ЗМІНИТИ */
- 
+
     buttonText: "Залишити заявку", /* ЗМІНИТИ */
     buttonLink: "#contact", /* ЗМІНИТИ на якір форми/popup Tilda */
- 
+
     /* ---------- СТАТИСТИКА (можна лишити 2, 3 або 4 елементи) ---------- */
     stats: [
       { number: "10+", label: "років досвіду в digital" },       /* ЗМІНИТИ */
@@ -424,17 +433,17 @@
       { number: "150+", label: "задоволених клієнтів" },          /* ЗМІНИТИ */
       { number: ">2M", label: "сукупне охоплення аудиторії" }     /* ЗМІНИТИ */
     ],
- 
+
     /* ---------- ЗОБРАЖЕННЯ ---------- */
     heroImage: "https://placehold.co/760x900/2C313A/EAEAEA?text=HYPE+SMM", /* ЗМІНИТИ на посилання свого фото */
     heroImageAlt: "Спеціаліст маркетингової агенції HYPE SMM за роботою над рекламною кампанією клієнта", /* ЗМІНИТИ опис фото для SEO (alt) */
- 
+
     /* ---------- ШРИФТИ (Google Fonts, за брендбуком HYPE) ---------- */
     fontHeading: "Montserrat", /* ЗМІНИТИ назву шрифту для заголовків */
     fontBody: "Manrope", /* ЗМІНИТИ назву шрифту для тексту і кнопок */
     fontHeadingUrl: "@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap');", /* ЗМІНИТИ посилання @import для заголовкового шрифту */
     fontBodyUrl: "@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');", /* ЗМІНИТИ посилання @import для шрифту тексту */
- 
+
     /* ---------- КОЛЬОРИ — ТЕМНА ТЕМА (dark theme з брендбуку) ---------- */
     colorsDark: {
       bgDeep: "#111B27",        /* ЗМІНИТИ фон блоку (найтемніший, за навігацією) */
@@ -450,7 +459,7 @@
       statLabel: "#8891A0",     /* ЗМІНИТИ колір підписів під цифрами */
       border: "rgba(255,255,255,0.08)" /* ЗМІНИТИ колір тонких розділювальних ліній */
     },
- 
+
     /* ---------- КОЛЬОРИ — СВІТЛА ТЕМА (light theme з брендбуку) ---------- */
     colorsLight: {
       bgDeep: "#ECE7E1",        /* ЗМІНИТИ фон блоку (за навігацією) */
@@ -468,19 +477,40 @@
     }
   };
   /* ===================== КІНЕЦЬ CONFIG ===================== */
- 
- 
+
+
   var root = document.getElementById("hypeHero1");
   if(!root){ return; }
- 
+
+  /* --- Виправлення адаптиву на телефонах --------------------------------
+     Якщо в налаштуваннях сторінки Tilda НЕ увімкнено "Мобільна версія",
+     сторінка віддає фіксований viewport (масштабовану копію 980px-макета),
+     і через це @media (max-width: ...) в CSS нижче ніколи не спрацьовує
+     на реальних телефонах. Цей блок коду примусово виставляє коректний
+     viewport, щоб адаптив працював навіть якщо перемикач в Tilda забули
+     увімкнути. Рекомендовано ДОДАТКОВО увімкнути "Мобільна версія" в
+     налаштуваннях сторінки Tilda — це основне і правильне рішення. --- */
+  (function fixViewport(){
+    var vp = document.querySelector('meta[name="viewport"]');
+    if(!vp){
+      vp = document.createElement("meta");
+      vp.setAttribute("name", "viewport");
+      document.head.appendChild(vp);
+    }
+    var content = vp.getAttribute("content") || "";
+    if(content.indexOf("device-width") === -1){
+      vp.setAttribute("content", "width=device-width, initial-scale=1");
+    }
+  })();
+
   /* --- Підключення шрифтів Google Fonts через JS --- */
   var fontStyle = document.createElement("style");
   fontStyle.innerHTML = CONFIG.fontHeadingUrl + " " + CONFIG.fontBodyUrl;
   document.head.appendChild(fontStyle);
- 
+
   root.style.setProperty("--font-heading", "'" + CONFIG.fontHeading + "', sans-serif");
   root.style.setProperty("--font-body", "'" + CONFIG.fontBody + "', sans-serif");
- 
+
   /* --- Застосування кольорів обраної теми --- */
   var C = (CONFIG.theme === "light") ? CONFIG.colorsLight : CONFIG.colorsDark;
   root.style.setProperty("--h-bg-deep", C.bgDeep);
@@ -496,7 +526,7 @@
   root.style.setProperty("--h-stat-label", C.statLabel);
   root.style.setProperty("--h-border", C.border);
   root.style.background = C.bgDeep;
- 
+
   /* --- Прибираємо білі смуги зверху/знизу: Tilda огортає блок T123
      у службовий контейнер .t-rec зі своїм padding і білим фоном.
      Знаходимо цей контейнер і підганяємо його під колір теми. --- */
@@ -510,7 +540,7 @@
   if(recInner){
     recInner.style.background = C.bgDeep;
   }
- 
+
   /* --- Навігація (можна вимкнути через CONFIG.showNav) --- */
   var navWrap = root.querySelector('[data-hype-el="navWrap"]');
   if(!CONFIG.showNav){
@@ -528,7 +558,7 @@
     var navBtn = root.querySelector('[data-hype-el="navButtonLink"]');
     navBtn.setAttribute("href", CONFIG.navButtonLink);
   }
- 
+
   /* --- Заповнення текстових полів --- */
   function setText(name, value){
     var el = root.querySelector('[data-hype-el="' + name + '"]');
@@ -540,12 +570,12 @@
   setText("badgeText", CONFIG.badgeText);
   setText("subText", CONFIG.subText);
   setText("buttonText", CONFIG.buttonText);
- 
+
   /* --- Заголовок потрібного рівня (h1 / h2), 3 рядки, останній — акцентний --- */
   var headingWrap = root.querySelector('[data-hype-el="headingWrap"]');
   var headingTag = (CONFIG.headingLevel === "h2") ? "h2" : "h1";
   var headingEl = document.createElement(headingTag);
- 
+
   var lines = [CONFIG.headingLine1, CONFIG.headingLine2, CONFIG.headingLine3];
   lines.forEach(function(lineText, i){
     var span = document.createElement("span");
@@ -554,53 +584,53 @@
     headingEl.appendChild(span);
   });
   headingWrap.appendChild(headingEl);
- 
+
   /* --- Кнопка CTA --- */
   var buttonLink = root.querySelector('[data-hype-el="buttonLink"]');
   if(buttonLink){ buttonLink.setAttribute("href", CONFIG.buttonLink); }
- 
+
   /* --- Зображення --- */
   var img = root.querySelector('[data-hype-el="heroImage"]');
   if(img){
     img.setAttribute("src", CONFIG.heroImage);
     img.setAttribute("alt", CONFIG.heroImageAlt);
   }
- 
+
   /* --- Статистика + мікроанімація "рахунок вгору" при появі --- */
   var statsWrap = root.querySelector('[data-hype-el="statsWrap"]');
   var statNumEls = [];
- 
+
   CONFIG.stats.forEach(function(stat){
     var item = document.createElement("div");
     item.className = "hype-hero__stat";
- 
+
     var numEl = document.createElement("span");
     numEl.className = "hype-hero__stat-num";
     numEl.textContent = "0";
     numEl.setAttribute("data-final", stat.number);
- 
+
     var labelEl = document.createElement("span");
     labelEl.className = "hype-hero__stat-label";
     labelEl.textContent = stat.label;
- 
+
     item.appendChild(numEl);
     item.appendChild(labelEl);
     statsWrap.appendChild(item);
     statNumEls.push(numEl);
   });
- 
+
   function animateStat(el){
     var finalText = el.getAttribute("data-final");
     var match = finalText.match(/\d+/);
     if(!match){ el.textContent = finalText; return; }
- 
+
     var target = parseInt(match[0], 10);
     var prefix = finalText.slice(0, match.index);
     var suffix = finalText.slice(match.index + match[0].length);
     var start = 0;
     var duration = 1100;
     var startTime = null;
- 
+
     function step(timestamp){
       if(!startTime){ startTime = timestamp; }
       var progress = Math.min((timestamp - startTime) / duration, 1);
@@ -615,7 +645,7 @@
     }
     requestAnimationFrame(step);
   }
- 
+
   var statsAnimated = false;
   function triggerStatsIfVisible(){
     if(statsAnimated){ return; }
@@ -626,7 +656,7 @@
       window.removeEventListener("scroll", triggerStatsIfVisible);
     }
   }
- 
+
   if("IntersectionObserver" in window){
     var observer = new IntersectionObserver(function(entries){
       entries.forEach(function(entry){
@@ -642,6 +672,9 @@
     window.addEventListener("scroll", triggerStatsIfVisible);
     triggerStatsIfVisible();
   }
- 
+
 })();
 </script>
+
+</body>
+</html>
