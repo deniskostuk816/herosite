@@ -497,6 +497,20 @@
   root.style.setProperty("--h-border", C.border);
   root.style.background = C.bgDeep;
  
+  /* --- Прибираємо білі смуги зверху/знизу: Tilda огортає блок T123
+     у службовий контейнер .t-rec зі своїм padding і білим фоном.
+     Знаходимо цей контейнер і підганяємо його під колір теми. --- */
+  var recWrap = root.closest(".t-rec") || root.parentElement;
+  if(recWrap){
+    recWrap.style.paddingTop = "0";
+    recWrap.style.paddingBottom = "0";
+    recWrap.style.background = C.bgDeep;
+  }
+  var recInner = root.closest(".t-rec__wrapper, .t-rec__inner, .r");
+  if(recInner){
+    recInner.style.background = C.bgDeep;
+  }
+ 
   /* --- Навігація (можна вимкнути через CONFIG.showNav) --- */
   var navWrap = root.querySelector('[data-hype-el="navWrap"]');
   if(!CONFIG.showNav){
